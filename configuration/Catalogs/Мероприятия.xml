@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="4828934e-3dfb-4151-a4d9-4287aaf5b69a">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Мероприятия" category="Object">
+				<xr:TypeId>a7d49bd8-85c2-4438-b7c2-cac953b410fc</xr:TypeId>
+				<xr:ValueId>f1571e6b-f1cf-4792-b45e-877b487b1b54</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Мероприятия" category="Ref">
+				<xr:TypeId>22df4003-9e39-4a19-9f0a-24fb6401b54e</xr:TypeId>
+				<xr:ValueId>9cc96a8d-bc91-4835-94f0-612b4cf96411</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Мероприятия" category="Selection">
+				<xr:TypeId>cb46ea65-7200-4764-99b2-c9fbf54c5390</xr:TypeId>
+				<xr:ValueId>e8c67496-2e55-4eef-b0b8-9ffc15f1d07c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Мероприятия" category="List">
+				<xr:TypeId>fcc78718-7066-4ad6-bc1a-3515450d34b7</xr:TypeId>
+				<xr:ValueId>31ef3c49-32ca-4f8c-893d-2b84f9c3eff9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Мероприятия" category="Manager">
+				<xr:TypeId>16f96be8-37f4-48ea-ab6c-5eebc2ea6545</xr:TypeId>
+				<xr:ValueId>0015c3a5-e3b1-4946-be6c-b7be42518c1c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Мероприятия</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>fb475df2-d71c-43ca-808b-fd458f938153</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="3c68dfd0-0c54-4999-9a43-a02552acdc0f">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.Мероприятия.Программа" category="TabularSection">
+						<xr:TypeId>3cbec2a2-cb56-44d9-8270-7e4932efb24a</xr:TypeId>
+						<xr:ValueId>b6adc684-a732-4c1b-96fc-e3e40162c7c1</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.Мероприятия.Программа" category="TabularSectionRow">
+						<xr:TypeId>c5f1978a-793b-47e3-97b4-a19f89469d1d</xr:TypeId>
+						<xr:ValueId>a97bfd66-b089-48d8-bee9-1bdabb5d3fb7</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Программа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0a0add28-a7b2-4215-8081-8d0c05150ffe</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="0ac9a4a6-80b2-4bf2-ab5c-0b90fdf0b7ad">
+						<Properties>
+							<Name>Проект</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проект</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="db05408c-7367-4f33-8cfa-02a2d4101ce2">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.Мероприятия.Протокол" category="TabularSection">
+						<xr:TypeId>d90f2096-d614-4810-bbb5-762350cbc842</xr:TypeId>
+						<xr:ValueId>e090ec1a-be6c-4838-b6dc-dd814fd9f8a3</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.Мероприятия.Протокол" category="TabularSectionRow">
+						<xr:TypeId>5ffbc418-c42e-490e-a815-2485b60ddeeb</xr:TypeId>
+						<xr:ValueId>e0a158a9-86bc-4419-93ed-fff025b0e54e</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Протокол</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ed0f4bd5-bc65-4e3d-bc9d-47c60dcaed16</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="4caa4d43-f5f3-47f1-9a9c-33aaae2af7b8">
+						<Properties>
+							<Name>Проект</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проект</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>ФормаЭлемента</Form>
+			<Form>ВводПунктаПрограммы</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
