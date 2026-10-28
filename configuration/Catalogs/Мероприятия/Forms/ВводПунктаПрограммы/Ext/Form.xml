@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Пункт программы</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Записать" id="12">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<Width>14</Width>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Записать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ЗаписатьExtendedTooltip" id="40"/>
+			</Button>
+			<Button name="Отмена" id="13">
+				<Type>CommandBarButton</Type>
+				<Width>10</Width>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отмена</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ОтменаExtendedTooltip" id="41"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Содержание" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Содержание</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Left</TitleLocation>
+			<Width>55</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>7</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="СодержаниеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СодержаниеExtendedTooltip" id="29"/>
+		</InputField>
+		<UsualGroup name="ГруппаИсполнительИТребуетПринятияРешения" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель и требует принятия решения</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИсполнительИТребуетПринятияРешенияРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="Исполнитель" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Title>
+					<DropListButton>true</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<OpenButton>false</OpenButton>
+					<CreateButton>false</CreateButton>
+					<ChooseType>false</ChooseType>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ИсполнительExtendedTooltip" id="31"/>
+				</InputField>
+				<CheckBoxField name="ТребуетПринятияРешения" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется принятие решения</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТребуетПринятияРешенияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТребуетПринятияРешенияExtendedTooltip" id="32"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВремя" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаВремяExtendedTooltip" id="33"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВремяПлан" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время план</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВремяПланExtendedTooltip" id="34"/>
+					<ChildItems>
+						<InputField name="ВремяПланСтр" id="1">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Время (план)</v8:content>
+								</v8:item>
+							</Title>
+							<Width>7</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<DropListButton>true</DropListButton>
+							<Mask>99:99</Mask>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>10 минут</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">00:10</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>15 минут</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">00:15</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>20 минут</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">00:20</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>30 минут</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">00:30</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>45 минут</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">00:45</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>1 час</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">01:00</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>2 часа</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">02:00</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ChoiceListButton>true</ChoiceListButton>
+							<ContextMenu name="ВремяПланСтрКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ВремяПланСтрExtendedTooltip" id="35"/>
+						</InputField>
+						<InputField name="Начало" id="16">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>с</v8:content>
+								</v8:item>
+							</Title>
+							<Width>8</Width>
+							<ChoiceButton>false</ChoiceButton>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=ЧЧ:мм</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="НачалоКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="НачалоExtendedTooltip" id="36"/>
+						</InputField>
+						<InputField name="Окончание" id="18">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>по</v8:content>
+								</v8:item>
+							</Title>
+							<Width>8</Width>
+							<ChoiceButton>false</ChoiceButton>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=ЧЧ:мм</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ОкончаниеКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ОкончаниеExtendedTooltip" id="37"/>
+						</InputField>
+						<LabelField name="ПредставлениеМестногоЧасовогоПояса" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представление местного часового пояса</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<TextColor>style:ИнформационнаяНадпись</TextColor>
+							<ContextMenu name="ПредставлениеМестногоЧасовогоПоясаКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ПредставлениеМестногоЧасовогоПоясаРасширеннаяПодсказка" id="49"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ВремяФактСтр" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время (факт)</v8:content>
+						</v8:item>
+					</Title>
+					<Width>7</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>true</DropListButton>
+					<Mask>99:99</Mask>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>10 минут</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">00:10</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>15 минут</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">00:15</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>20 минут</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">00:20</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>30 минут</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">00:30</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>45 минут</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">00:45</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>1 час</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">01:00</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>2 часа</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">02:00</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ChoiceListButton>true</ChoiceListButton>
+					<ContextMenu name="ВремяФактСтрКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ВремяФактСтрExtendedTooltip" id="38"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Left</TitleLocation>
+			<Width>55</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>3</Height>
+			<VerticalStretch>false</VerticalStretch>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="46"/>
+		</InputField>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пункт программы</v8:content>
+			</v8:item>
+		</Title>
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoTitle>false</AutoTitle>
+		<CommandBarLocation>Bottom</CommandBarLocation>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="Записать" id="12">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<Width>14</Width>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записать</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ЗаписатьExtendedTooltip" id="40"/>
+				</Button>
+				<Button name="Отмена" id="13">
+					<Type>CommandBarButton</Type>
+					<Width>10</Width>
+					<CommandName>0</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отмена</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтменаExtendedTooltip" id="41"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<InputField name="Содержание" id="7">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Содержание</v8:content>
+					</v8:item>
+				</Title>
+				<TitleLocation>Left</TitleLocation>
+				<Width>55</Width>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<Height>7</Height>
+				<MultiLine>true</MultiLine>
+				<ContextMenu name="СодержаниеКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СодержаниеExtendedTooltip" id="29"/>
+			</InputField>
+			<UsualGroup name="ГруппаИсполнительИТребуетПринятияРешения" id="27">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Исполнитель и требует принятия решения</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаИсполнительИТребуетПринятияРешенияРасширеннаяПодсказка" id="30"/>
+				<ChildItems>
+					<InputField name="Исполнитель" id="9">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ответственный</v8:content>
+							</v8:item>
+						</Title>
+						<DropListButton>true</DropListButton>
+						<ChoiceButton>false</ChoiceButton>
+						<OpenButton>false</OpenButton>
+						<CreateButton>false</CreateButton>
+						<ChooseType>false</ChooseType>
+						<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+						<ContextMenu name="ИсполнительКонтекстноеМеню" id="10"/>
+						<ExtendedTooltip name="ИсполнительExtendedTooltip" id="31"/>
+					</InputField>
+					<CheckBoxField name="ТребуетПринятияРешения" id="20">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Требуется принятие решения</v8:content>
+							</v8:item>
+						</Title>
+						<TitleLocation>Right</TitleLocation>
+						<CheckBoxType>Auto</CheckBoxType>
+						<ContextMenu name="ТребуетПринятияРешенияКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="ТребуетПринятияРешенияExtendedTooltip" id="32"/>
+					</CheckBoxField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаВремя" id="26">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Время</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ExtendedTooltip name="ГруппаВремяExtendedTooltip" id="33"/>
+				<ChildItems>
+					<UsualGroup name="ГруппаВремяПлан" id="15">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Время план</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Horizontal</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаВремяПланExtendedTooltip" id="34"/>
+						<ChildItems>
+							<InputField name="ВремяПланСтр" id="1">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Время (план)</v8:content>
+									</v8:item>
+								</Title>
+								<Width>7</Width>
+								<HorizontalStretch>false</HorizontalStretch>
+								<DropListButton>true</DropListButton>
+								<Mask>99:99</Mask>
+								<ChoiceList>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>10 минут</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xs:string">00:10</Value>
+										</xr:Value>
+									</xr:Item>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>15 минут</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xs:string">00:15</Value>
+										</xr:Value>
+									</xr:Item>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>20 минут</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xs:string">00:20</Value>
+										</xr:Value>
+									</xr:Item>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>30 минут</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xs:string">00:30</Value>
+										</xr:Value>
+									</xr:Item>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>45 минут</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xs:string">00:45</Value>
+										</xr:Value>
+									</xr:Item>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>1 час</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xs:string">01:00</Value>
+										</xr:Value>
+									</xr:Item>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>2 часа</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xs:string">02:00</Value>
+										</xr:Value>
+									</xr:Item>
+								</ChoiceList>
+								<ChoiceListButton>true</ChoiceListButton>
+								<ContextMenu name="ВремяПланСтрКонтекстноеМеню" id="2"/>
+								<ExtendedTooltip name="ВремяПланСтрExtendedTooltip" id="35"/>
+							</InputField>
+							<InputField name="Начало" id="16">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>с</v8:content>
+									</v8:item>
+								</Title>
+								<Width>8</Width>
+								<ChoiceButton>false</ChoiceButton>
+								<EditFormat>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ДФ=ЧЧ:мм</v8:content>
+									</v8:item>
+								</EditFormat>
+								<ContextMenu name="НачалоКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="НачалоExtendedTooltip" id="36"/>
+							</InputField>
+							<InputField name="Окончание" id="18">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>по</v8:content>
+									</v8:item>
+								</Title>
+								<Width>8</Width>
+								<ChoiceButton>false</ChoiceButton>
+								<EditFormat>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ДФ=ЧЧ:мм</v8:content>
+									</v8:item>
+								</EditFormat>
+								<ContextMenu name="ОкончаниеКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="ОкончаниеExtendedTooltip" id="37"/>
+							</InputField>
+							<LabelField name="ПредставлениеМестногоЧасовогоПояса" id="47">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Представление местного часового пояса</v8:content>
+									</v8:item>
+								</Title>
+								<TitleLocation>None</TitleLocation>
+								<TextColor>style:ИнформационнаяНадпись</TextColor>
+								<ContextMenu name="ПредставлениеМестногоЧасовогоПоясаКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="ПредставлениеМестногоЧасовогоПоясаРасширеннаяПодсказка" id="49"/>
+							</LabelField>
+						</ChildItems>
+					</UsualGroup>
+					<InputField name="ВремяФактСтр" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Время (факт)</v8:content>
+							</v8:item>
+						</Title>
+						<Width>7</Width>
+						<HorizontalStretch>false</HorizontalStretch>
+						<DropListButton>true</DropListButton>
+						<Mask>99:99</Mask>
+						<ChoiceList>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>10 минут</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">00:10</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>15 минут</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">00:15</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>20 минут</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">00:20</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>30 минут</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">00:30</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>45 минут</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">00:45</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>1 час</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">01:00</Value>
+								</xr:Value>
+							</xr:Item>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>2 часа</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xs:string">02:00</Value>
+								</xr:Value>
+							</xr:Item>
+						</ChoiceList>
+						<ChoiceListButton>true</ChoiceListButton>
+						<ContextMenu name="ВремяФактСтрКонтекстноеМеню" id="4"/>
+						<ExtendedTooltip name="ВремяФактСтрExtendedTooltip" id="38"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<InputField name="Комментарий" id="44">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Комментарий</v8:content>
+					</v8:item>
+				</Title>
+				<TitleLocation>Left</TitleLocation>
+				<Width>55</Width>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<Height>3</Height>
+				<VerticalStretch>false</VerticalStretch>
+				<MultiLine>true</MultiLine>
+				<ContextMenu name="КомментарийКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="46"/>
+			</InputField>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>
