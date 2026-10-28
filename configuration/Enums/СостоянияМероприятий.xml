@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="7b387684-7dab-47de-9ea0-3da54752d1d8">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияМероприятий" category="Ref">
+				<xr:TypeId>b81bd75b-fd49-4056-a322-62ffd5b5d7e1</xr:TypeId>
+				<xr:ValueId>2cca6abb-ea62-4d0b-af3d-7e2820767dc7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияМероприятий" category="Manager">
+				<xr:TypeId>14a35ac0-464d-45e4-9271-2c2ebc7c8d9b</xr:TypeId>
+				<xr:ValueId>b757631f-10b6-47d0-909d-3160780beac5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияМероприятий" category="List">
+				<xr:TypeId>117ed52b-625c-4b0a-889a-988ce489731d</xr:TypeId>
+				<xr:ValueId>b61d3ea1-2aba-4811-9bd1-445baa034ee3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияМероприятий</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>fede4e64-31fa-43da-91ca-9043f0354e42</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="b785e8cf-fcf4-4073-b5e9-2fbd3e6dd7cd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МатериалыВыступающихЗапрошены</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a6604e0d-3003-4e39-8433-e332525a7450</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2708325c-8135-4288-83cc-9499021fcf8c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколУтвержден</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bc04d140-b7cc-47a3-8233-2c05af5b3af7</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2f46972f-5e50-4dd7-b252-7e15c58ea8d4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколНеУтвержден</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2069e540-8d90-48e9-8560-59d20247795c</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b1fd791f-b2c6-4dc2-8cd8-05c547fea5d0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколПодготовлен</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0634779a-b506-4a5f-82f4-8e711072bf31</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b362d03c-dd05-4b4b-88ec-6b368f997457">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПриглашенияПриняты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>57c912ba-eac2-4b86-954b-2437d83c19c4</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="46d1fd07-2ffe-4ef7-9f81-7962544796c1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПрограммаУтверждена</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>057d6fd6-ea1d-4467-bd30-946a4f273630</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="447b01a4-c0d7-4044-82d1-83d5c16fb904">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПриглашенияОтправлены</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d23d2d4e-9a1c-4fb1-bda2-8910fa617146</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="750fa39c-e100-4fc6-a8a9-abfacd1b5f4e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПриглашенияНеПриняты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e35a49fd-0db5-4f62-859e-9daff9d59fec</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e250678e-d084-47f7-9499-8ce7db498606">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПрограммаНаУтверждении</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b49d5a7c-e7f5-4887-84a1-68cf49113c7c</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e7b790c0-e87a-4fea-9f18-3234f73b40f6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПрограммаНеУтверждена</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c0c23933-d61c-4089-95f8-25b6c006bae4</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="871e3017-97a9-42ef-84e2-643f4d8354e8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколГотовиться</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>acba4f5f-0fcd-47a0-a10f-b19d74560d73</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="bc083dc6-41e0-4926-864a-f66e8f3f597b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколНаУтверждении</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>eac27b71-1346-4732-bf45-6ad578fb4979</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="40dd42e6-abdc-41f0-a2b3-95a095d0f519">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколНаСогласовании</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5f0095f1-ef0a-4dfb-ad85-d0ce688eadd4</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="64b3f6bd-c34f-48cd-b66e-491f03aba877">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколСогласован</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3398d2b2-8400-469a-999c-e97ea426c649</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5bf91136-8b9d-4e5d-9fe7-c83ea2bd9a7c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СМатериаламиОзнакомились</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9692fda5-4378-419e-bb47-4377613b5901</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="563afa6a-d2aa-4f00-8c90-5fddf0966ebd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколНеСогласован</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6212dc25-b92b-4b9c-898d-45bf4e4c93e6</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="77815fdf-ec47-4d15-b514-56639a72ec36">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколНаИсполнении</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>352ceaf5-8076-4481-a9e5-80b3353afe9c</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5b1cdd31-123c-4566-bdb5-9e633fce18ac">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПротоколИсполнен</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>857d2a74-f35b-440a-b13c-70c3a269e2ee</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2f7734c2-2193-4f14-90e7-b91467cb8fe5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПолученыМатериалыВыступающих</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>73cb9b62-0d61-49fc-9d94-15c6833e10d0</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2c2695a4-2b72-4701-a1c2-e787961a0f10">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МатериалыОтправленыНаОзнакомление</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>be606759-94c5-4c2c-8544-6d71469b7c03</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
