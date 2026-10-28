@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<BusinessProcess uuid="47755bf4-bd10-4eb4-bef0-3e7ac6249f19">
+		<InternalInfo>
+			<xr:GeneratedType name="BusinessProcessObject.РешениеВопросовВыполненияЗадач" category="Object">
+				<xr:TypeId>46e01b34-2658-47f9-8319-a4e2e96c4225</xr:TypeId>
+				<xr:ValueId>cec6ce37-ad8c-48fe-bb74-1e4e518add31</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="BusinessProcessRef.РешениеВопросовВыполненияЗадач" category="Ref">
+				<xr:TypeId>c811eb42-61a4-45e7-9424-6779af937ff4</xr:TypeId>
+				<xr:ValueId>013e11af-c3eb-4dfb-ab28-f36845ce32a1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="BusinessProcessSelection.РешениеВопросовВыполненияЗадач" category="Selection">
+				<xr:TypeId>70f539fd-e2d2-4c80-a619-c34624dac440</xr:TypeId>
+				<xr:ValueId>cd52018e-d5e6-44f7-8b15-c9d8392122dc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="BusinessProcessList.РешениеВопросовВыполненияЗадач" category="List">
+				<xr:TypeId>eb1057e2-8ef1-4ce4-b973-d258c6af2005</xr:TypeId>
+				<xr:ValueId>39daacde-fd34-4f77-b787-2f15e91b59f7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="BusinessProcessManager.РешениеВопросовВыполненияЗадач" category="Manager">
+				<xr:TypeId>1c084fc5-1f4a-44e7-bf64-62efd3c3cac7</xr:TypeId>
+				<xr:ValueId>625ad833-c823-4c67-be08-c03be51b6d7f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="BusinessProcessRoutePointRef.РешениеВопросовВыполненияЗадач" category="RoutePointRef">
+				<xr:TypeId>aff8737f-0190-4cba-9b95-eccf5ee6791d</xr:TypeId>
+				<xr:ValueId>7e27f045-15f7-4385-a47e-2a406c3bc408</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РешениеВопросовВыполненияЗадач</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>be5e2d83-70ce-4bd9-97af-eb0d365df63e</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="ce8d473f-38cc-4f6b-9b16-1be7d177e38a">
+				<Properties>
+					<Name>аск_ЗапросПереносаСрока</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аск запрос переноса срока</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Form>ФормаБизнесПроцесса</Form>
+		</ChildObjects>
+	</BusinessProcess>
+</MetaDataObject>
