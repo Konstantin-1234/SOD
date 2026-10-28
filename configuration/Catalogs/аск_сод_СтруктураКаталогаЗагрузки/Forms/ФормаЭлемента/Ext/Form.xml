@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="79">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="77">
+					<Width>40</Width>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<InputField name="РазделительЗагрузки" id="71">
+							<DataPath>Объект.РазделительЗагрузки</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РазделительЗагрузкиКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="РазделительЗагрузкиРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="ВидДокумента" id="74">
+							<DataPath>Объект.ВидДокумента</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВидДокументаКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="76"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ЗаполнениеРеквизитовДокументаГруппа1" id="69">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаГруппа1РасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="СпособЗагрузкиИзКаталога" id="13">
+							<DataPath>Объект.СпособЗагрузкиИзКаталога</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>35</MaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СпособЗагрузкиИзКаталогаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="СпособЗагрузкиИзКаталогаРасширеннаяПодсказка" id="15"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ПолныйПутьККаталогу" id="66">
+			<DataPath>Объект.ПолныйПутьККаталогу</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>2</Height>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПолныйПутьККаталогуКонтекстноеМеню" id="67"/>
+			<ExtendedTooltip name="ПолныйПутьККаталогуРасширеннаяПодсказка" id="68"/>
+		</InputField>
+		<InputField name="Комментарий" id="10">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Pages name="Страницы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<Page name="ГруппаЗаполнениеРеквизитовДокумента" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение реквизитов документа</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаЗаполнениеРеквизитовДокументаРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<Table name="ЗаполнениеРеквизитовДокумента" id="41">
+							<Representation>List</Representation>
+							<Height>3</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ЗаполнениеРеквизитовДокумента</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗаполнениеРеквизитовДокументаКонтекстноеМеню" id="42"/>
+							<AutoCommandBar name="ЗаполнениеРеквизитовДокументаКоманднаяПанель" id="43"/>
+							<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаРасширеннаяПодсказка" id="44"/>
+							<SearchStringAddition name="ЗаполнениеРеквизитовДокументаСтрокаПоиска" id="45">
+								<AdditionSource>
+									<Item>ЗаполнениеРеквизитовДокумента</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаполнениеРеквизитовДокументаСтрокаПоискаКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗаполнениеРеквизитовДокументаСостояниеПросмотра" id="48">
+								<AdditionSource>
+									<Item>ЗаполнениеРеквизитовДокумента</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаполнениеРеквизитовДокументаСостояниеПросмотраКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗаполнениеРеквизитовДокументаУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>ЗаполнениеРеквизитовДокумента</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаполнениеРеквизитовДокументаУправлениеПоискомКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗаполнениеРеквизитовДокументаНомерСтроки" id="54">
+									<DataPath>Объект.ЗаполнениеРеквизитовДокумента.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаполнениеРеквизитовДокументаНомерСтрокиКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаНомерСтрокиРасширеннаяПодсказка" id="56"/>
+								</LabelField>
+								<InputField name="ЗаполнениеРеквизитовДокументаРеквизитДокумента" id="57">
+									<DataPath>Объект.ЗаполнениеРеквизитовДокумента.РеквизитДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗаполнениеРеквизитовДокументаРеквизитДокументаКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаРеквизитДокументаРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="ЗаполнениеРеквизитовДокументаЗначение" id="60">
+									<DataPath>Объект.ЗаполнениеРеквизитовДокумента.Значение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗаполнениеРеквизитовДокументаЗначениеКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаЗначениеРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<LabelField name="ЗаполнениеРеквизитовДокументаРеквизитДокументаКомментарий" id="63">
+									<DataPath>Объект.ЗаполнениеРеквизитовДокумента.РеквизитДокумента.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаполнениеРеквизитовДокументаРеквизитДокументаКомментарийКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ЗаполнениеРеквизитовДокументаРеквизитДокументаКомментарийРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПредставленияКаталога" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представления каталога</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПредставленияКаталогаРасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<Table name="ПредставленияКаталога" id="20">
+							<Representation>List</Representation>
+							<Height>3</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПредставленияКаталога</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПредставленияКаталогаКонтекстноеМеню" id="21"/>
+							<AutoCommandBar name="ПредставленияКаталогаКоманднаяПанель" id="22"/>
+							<ExtendedTooltip name="ПредставленияКаталогаРасширеннаяПодсказка" id="23"/>
+							<SearchStringAddition name="ПредставленияКаталогаСтрокаПоиска" id="24">
+								<AdditionSource>
+									<Item>ПредставленияКаталога</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПредставленияКаталогаСтрокаПоискаКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ПредставленияКаталогаСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПредставленияКаталогаСостояниеПросмотра" id="27">
+								<AdditionSource>
+									<Item>ПредставленияКаталога</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПредставленияКаталогаСостояниеПросмотраКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ПредставленияКаталогаСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПредставленияКаталогаУправлениеПоиском" id="30">
+								<AdditionSource>
+									<Item>ПредставленияКаталога</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПредставленияКаталогаУправлениеПоискомКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ПредставленияКаталогаУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПредставленияКаталогаНомерСтроки" id="33">
+									<DataPath>Объект.ПредставленияКаталога.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПредставленияКаталогаНомерСтрокиКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ПредставленияКаталогаНомерСтрокиРасширеннаяПодсказка" id="35"/>
+								</LabelField>
+								<InputField name="ПредставленияКаталогаПредставлениеКаталога" id="36">
+									<DataPath>Объект.ПредставленияКаталога.ПредставлениеКаталога</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПредставленияКаталогаПредставлениеКаталогаКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ПредставленияКаталогаПредставлениеКаталогаРасширеннаяПодсказка" id="38"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.аск_сод_СтруктураКаталогаЗагрузки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
