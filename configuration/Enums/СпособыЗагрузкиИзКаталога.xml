@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="06b2de5c-fa52-4f51-b0f5-68907323f41e">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыЗагрузкиИзКаталога" category="Ref">
+				<xr:TypeId>52a99eb6-74ea-4ce4-883a-edfbe541429f</xr:TypeId>
+				<xr:ValueId>676eec05-6aba-419b-bcc9-2b7d00af9ec6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыЗагрузкиИзКаталога" category="Manager">
+				<xr:TypeId>92e04b48-0e57-443e-bd22-83b7c34b9169</xr:TypeId>
+				<xr:ValueId>3b79e1d4-6e53-48c0-a566-18d79943ac60</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыЗагрузкиИзКаталога" category="List">
+				<xr:TypeId>c1c48f6b-8c21-4c37-a926-d60062fb352a</xr:TypeId>
+				<xr:ValueId>18a5eb88-8245-4394-94aa-c0ebe0be1ae7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СпособыЗагрузкиИзКаталога</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способы загрузки из каталога</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="3c0eb949-326d-4945-ae12-d9f771b86bfb">
+				<Properties>
+					<Name>СмотретьДалее</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Смотреть далее</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="417c8f12-3979-42b1-8cb4-3ceb783a4315">
+				<Properties>
+					<Name>ДляКаждогоФайлаСоздатьДокумент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для каждого файла создать документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="358fa3e3-804b-4a26-adcb-db67a0503294">
+				<Properties>
+					<Name>СоздатьДокументИЗагрузитьФайлы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ; Файлы (учитывая иерахию файлов)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="88cb01c2-70c2-4bc2-8cdc-757a22ae01ef">
+				<Properties>
+					<Name>СоздатьДокументИЗагрузитьФайлы_БезРоли</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ; Файлы (БЕЗ иерахии файлов)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
