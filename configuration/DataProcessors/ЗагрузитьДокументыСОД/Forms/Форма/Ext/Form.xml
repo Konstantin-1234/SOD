@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗагрузитьДокументы" id="4">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьДокументы</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьДокументыРасширеннаяПодсказка" id="5"/>
+			</Button>
+			<Button name="ФормаЗавершитьЗагрузку" id="18">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗавершитьЗагрузку</CommandName>
+				<ExtendedTooltip name="ФормаЗавершитьЗагрузкуРасширеннаяПодсказка" id="19"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа6" id="163">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="164"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛево" id="165">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛевоРасширеннаяПодсказка" id="166"/>
+					<ChildItems>
+						<InputField name="КаталогПроекта" id="1">
+							<DataPath>Объект.КаталогПроекта</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КаталогПроектаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КаталогПроектаРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">КаталогПроектаПриИзменении</Event>
+								<Event name="StartChoice">КаталогПроектаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="КаталогНачалаЗагрузки" id="20">
+							<DataPath>Объект.КаталогНачалаЗагрузки</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КаталогНачалаЗагрузкиКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="КаталогНачалаЗагрузкиРасширеннаяПодсказка" id="22"/>
+							<Events>
+								<Event name="OnChange">РеквизитШапкиФормыПриИзменении</Event>
+								<Event name="StartChoice">КаталогПроектаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа1" id="23">
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="24"/>
+							<ChildItems>
+								<InputField name="РазделительЗагрузки" id="160">
+									<DataPath>Объект.РазделительЗагрузки</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазделительЗагрузкиКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="РазделительЗагрузкиРасширеннаяПодсказка" id="162"/>
+									<Events>
+										<Event name="OnChange">РазделительЗагрузкиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Проект" id="6">
+									<DataPath>Объект.Проект</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПроектКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="8"/>
+									<Events>
+										<Event name="OnChange">РеквизитШапкиФормыПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Организация" id="9">
+									<DataPath>Объект.Организация</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="11"/>
+									<Events>
+										<Event name="OnChange">РеквизитШапкиФормыПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Контрагент" id="25">
+									<DataPath>Объект.Контрагент</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КонтрагентКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="27"/>
+									<Events>
+										<Event name="OnChange">РеквизитШапкиФормыПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПраво" id="167">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПравоРасширеннаяПодсказка" id="168"/>
+					<ChildItems>
+						<Table name="ФинансовыеШифры" id="169">
+							<Width>25</Width>
+							<Height>3</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<HorizontalStretch>false</HorizontalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ФинансовыеШифры</DataPath>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ФинансовыеШифрыКонтекстноеМеню" id="170"/>
+							<AutoCommandBar name="ФинансовыеШифрыКоманднаяПанель" id="171">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ФинансовыеШифрыРасширеннаяПодсказка" id="172"/>
+							<SearchStringAddition name="ФинансовыеШифрыСтрокаПоиска" id="173">
+								<AdditionSource>
+									<Item>ФинансовыеШифры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФинансовыеШифрыСтрокаПоискаКонтекстноеМеню" id="174"/>
+								<ExtendedTooltip name="ФинансовыеШифрыСтрокаПоискаРасширеннаяПодсказка" id="175"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ФинансовыеШифрыСостояниеПросмотра" id="176">
+								<AdditionSource>
+									<Item>ФинансовыеШифры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФинансовыеШифрыСостояниеПросмотраКонтекстноеМеню" id="177"/>
+								<ExtendedTooltip name="ФинансовыеШифрыСостояниеПросмотраРасширеннаяПодсказка" id="178"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ФинансовыеШифрыУправлениеПоиском" id="179">
+								<AdditionSource>
+									<Item>ФинансовыеШифры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ФинансовыеШифрыУправлениеПоискомКонтекстноеМеню" id="180"/>
+								<ExtendedTooltip name="ФинансовыеШифрыУправлениеПоискомРасширеннаяПодсказка" id="181"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">РеквизитШапкиФормыПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ФинансовыеШифрыНомерСтроки" id="182">
+									<DataPath>Объект.ФинансовыеШифры.LineNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ФинансовыеШифрыНомерСтрокиКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="ФинансовыеШифрыНомерСтрокиРасширеннаяПодсказка" id="184"/>
+								</LabelField>
+								<InputField name="ФинансовыеШифрыФинансовыйШифр" id="185">
+									<DataPath>Объект.ФинансовыеШифры.ФинансовыйШифр</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ФинансовыеШифрыФинансовыйШифрКонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="ФинансовыеШифрыФинансовыйШифрРасширеннаяПодсказка" id="187"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="ГруппаОтчетЗагрузки" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отчет загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОтчетЗагрузкиРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="ТабДок" id="15">
+							<DataPath>ТабДок</DataPath>
+							<Height>3</Height>
+							<ContextMenu name="ТабДокКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="17"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТЧРезультатЗагрузки" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табличные части: Результат загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ТЧРезультат загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТЧРезультатЗагрузкиРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<Table name="РезультатыЗагрузкиДокументов" id="36">
+							<Height>3</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.РезультатыЗагрузкиДокументов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработанные документы</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РезультатыЗагрузкиДокументовКонтекстноеМеню" id="37"/>
+							<AutoCommandBar name="РезультатыЗагрузкиДокументовКоманднаяПанель" id="38"/>
+							<ExtendedTooltip name="РезультатыЗагрузкиДокументовРасширеннаяПодсказка" id="39"/>
+							<SearchStringAddition name="РезультатыЗагрузкиДокументовСтрокаПоиска" id="40">
+								<AdditionSource>
+									<Item>РезультатыЗагрузкиДокументов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыЗагрузкиДокументовСтрокаПоискаКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="РезультатыЗагрузкиДокументовСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РезультатыЗагрузкиДокументовСостояниеПросмотра" id="43">
+								<AdditionSource>
+									<Item>РезультатыЗагрузкиДокументов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыЗагрузкиДокументовСостояниеПросмотраКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="РезультатыЗагрузкиДокументовСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РезультатыЗагрузкиДокументовУправлениеПоиском" id="46">
+								<AdditionSource>
+									<Item>РезультатыЗагрузкиДокументов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыЗагрузкиДокументовУправлениеПоискомКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="РезультатыЗагрузкиДокументовУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РезультатыЗагрузкиДокументовНомерСтроки" id="49">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="РезультатыЗагрузкиДокументовНомерСтрокиКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовНомерСтрокиРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+								<InputField name="РезультатыЗагрузкиДокументовПутьНаДиске" id="52">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.ПутьНаДиске</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовПутьНаДискеКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовПутьНаДискеРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиДокументовИмяФайла" id="55">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.ИмяФайла</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовИмяФайлаКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовИмяФайлаРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиДокументовПравилоЗагрузки" id="58">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.ПравилоЗагрузки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовПравилоЗагрузкиКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовПравилоЗагрузкиРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиДокументовДокумент" id="61">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовДокументКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовДокументРасширеннаяПодсказка" id="63"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиДокументовУдача" id="64">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.Удача</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовУдачаКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовУдачаРасширеннаяПодсказка" id="66"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиДокументовБеда" id="67">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.Беда</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовБедаКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовБедаРасширеннаяПодсказка" id="69"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиДокументовЗагруженРанее" id="70">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.ЗагруженРанее</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовЗагруженРанееКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовЗагруженРанееРасширеннаяПодсказка" id="72"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиДокументовТекстОшибки" id="73">
+									<DataPath>Объект.РезультатыЗагрузкиДокументов.ТекстОшибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиДокументовТекстОшибкиКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиДокументовТекстОшибкиРасширеннаяПодсказка" id="75"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<InputField name="РезультатыЗагрузкиДокументовПутьНаДиске1" id="123">
+							<DataPath>Items.РезультатыЗагрузкиДокументов.CurrentData.ПутьНаДиске</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РезультатыЗагрузкиДокументовПутьНаДиске1КонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="РезультатыЗагрузкиДокументовПутьНаДиске1РасширеннаяПодсказка" id="125"/>
+						</InputField>
+						<InputField name="РезультатыЗагрузкиДокументовТекстОшибки1" id="154">
+							<DataPath>Items.РезультатыЗагрузкиДокументов.CurrentData.ТекстОшибки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РезультатыЗагрузкиДокументовТекстОшибки1КонтекстноеМеню" id="155"/>
+							<ExtendedTooltip name="РезультатыЗагрузкиДокументовТекстОшибки1РасширеннаяПодсказка" id="156"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработанные файлы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<Table name="РезультатыЗагрузкиФайлов" id="76">
+							<Height>3</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.РезультатыЗагрузкиФайлов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РезультатыЗагрузкиФайловКонтекстноеМеню" id="77"/>
+							<AutoCommandBar name="РезультатыЗагрузкиФайловКоманднаяПанель" id="78"/>
+							<ExtendedTooltip name="РезультатыЗагрузкиФайловРасширеннаяПодсказка" id="79"/>
+							<SearchStringAddition name="РезультатыЗагрузкиФайловСтрокаПоиска" id="80">
+								<AdditionSource>
+									<Item>РезультатыЗагрузкиФайлов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыЗагрузкиФайловСтрокаПоискаКонтекстноеМеню" id="81"/>
+								<ExtendedTooltip name="РезультатыЗагрузкиФайловСтрокаПоискаРасширеннаяПодсказка" id="82"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РезультатыЗагрузкиФайловСостояниеПросмотра" id="83">
+								<AdditionSource>
+									<Item>РезультатыЗагрузкиФайлов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыЗагрузкиФайловСостояниеПросмотраКонтекстноеМеню" id="84"/>
+								<ExtendedTooltip name="РезультатыЗагрузкиФайловСостояниеПросмотраРасширеннаяПодсказка" id="85"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РезультатыЗагрузкиФайловУправлениеПоиском" id="86">
+								<AdditionSource>
+									<Item>РезультатыЗагрузкиФайлов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатыЗагрузкиФайловУправлениеПоискомКонтекстноеМеню" id="87"/>
+								<ExtendedTooltip name="РезультатыЗагрузкиФайловУправлениеПоискомРасширеннаяПодсказка" id="88"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РезультатыЗагрузкиФайловНомерСтроки" id="89">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ContextMenu name="РезультатыЗагрузкиФайловНомерСтрокиКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловНомерСтрокиРасширеннаяПодсказка" id="91"/>
+								</LabelField>
+								<InputField name="РезультатыЗагрузкиФайловПутьНаДиске" id="92">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.ПутьНаДиске</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловПутьНаДискеКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловПутьНаДискеРасширеннаяПодсказка" id="94"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиФайловИмяФайла" id="95">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.ИмяФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловИмяФайлаКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловИмяФайлаРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиФайловПравилоЗагрузки" id="98">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.ПравилоЗагрузки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловПравилоЗагрузкиКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловПравилоЗагрузкиРасширеннаяПодсказка" id="100"/>
+								</InputField>
+								<LabelField name="РезультатыЗагрузкиФайловФайлСсылкаВладелецФайла" id="116">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.Файл.Ref.ВладелецФайла</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документ</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатыЗагрузкиФайловФайлСсылкаВладелецФайлаКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловФайлСсылкаВладелецФайлаРасширеннаяПодсказка" id="118"/>
+								</LabelField>
+								<InputField name="РезультатыЗагрузкиФайловФайл" id="101">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.Файл</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловФайлКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловФайлРасширеннаяПодсказка" id="103"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиФайловУдача" id="104">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.Удача</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловУдачаКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловУдачаРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиФайловБеда" id="107">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.Беда</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловБедаКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловБедаРасширеннаяПодсказка" id="109"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиФайловЗагруженРанее" id="110">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.ЗагруженРанее</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловЗагруженРанееКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловЗагруженРанееРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<InputField name="РезультатыЗагрузкиФайловТекстОшибки" id="113">
+									<DataPath>Объект.РезультатыЗагрузкиФайлов.ТекстОшибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РезультатыЗагрузкиФайловТекстОшибкиКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="РезультатыЗагрузкиФайловТекстОшибкиРасширеннаяПодсказка" id="115"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<InputField name="РезультатыЗагрузкиФайловПутьНаДиске1" id="126">
+							<DataPath>Items.РезультатыЗагрузкиФайлов.CurrentData.ПутьНаДиске</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РезультатыЗагрузкиФайловПутьНаДиске1КонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="РезультатыЗагрузкиФайловПутьНаДиске1РасширеннаяПодсказка" id="128"/>
+						</InputField>
+						<InputField name="РезультатыЗагрузкиФайловТекстОшибки1" id="157">
+							<DataPath>Items.РезультатыЗагрузкиФайлов.CurrentData.ТекстОшибки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РезультатыЗагрузкиФайловТекстОшибки1КонтекстноеМеню" id="158"/>
+							<ExtendedTooltip name="РезультатыЗагрузкиФайловТекстОшибки1РасширеннаяПодсказка" id="159"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="121">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файлы (всего)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="122"/>
+					<ChildItems>
+						<Table name="ФайлыВсего" id="129">
+							<Height>3</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ФайлыВсего</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ФайлыВсегоКонтекстноеМеню" id="130"/>
+							<AutoCommandBar name="ФайлыВсегоКоманднаяПанель" id="131"/>
+							<ExtendedTooltip name="ФайлыВсегоРасширеннаяПодсказка" id="132"/>
+							<SearchStringAddition name="ФайлыВсегоСтрокаПоиска" id="133">
+								<AdditionSource>
+									<Item>ФайлыВсего</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФайлыВсегоСтрокаПоискаКонтекстноеМеню" id="134"/>
+								<ExtendedTooltip name="ФайлыВсегоСтрокаПоискаРасширеннаяПодсказка" id="135"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ФайлыВсегоСостояниеПросмотра" id="136">
+								<AdditionSource>
+									<Item>ФайлыВсего</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФайлыВсегоСостояниеПросмотраКонтекстноеМеню" id="137"/>
+								<ExtendedTooltip name="ФайлыВсегоСостояниеПросмотраРасширеннаяПодсказка" id="138"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ФайлыВсегоУправлениеПоиском" id="139">
+								<AdditionSource>
+									<Item>ФайлыВсего</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ФайлыВсегоУправлениеПоискомКонтекстноеМеню" id="140"/>
+								<ExtendedTooltip name="ФайлыВсегоУправлениеПоискомРасширеннаяПодсказка" id="141"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ФайлыВсегоНомерСтроки" id="142">
+									<DataPath>Объект.ФайлыВсего.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФайлыВсегоНомерСтрокиКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ФайлыВсегоНомерСтрокиРасширеннаяПодсказка" id="144"/>
+								</LabelField>
+								<InputField name="ФайлыВсегоПутьНаДиске" id="145">
+									<DataPath>Объект.ФайлыВсего.ПутьНаДиске</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ФайлыВсегоПутьНаДискеКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="ФайлыВсегоПутьНаДискеРасширеннаяПодсказка" id="147"/>
+								</InputField>
+								<InputField name="ФайлыВсегоИмяФайла" id="148">
+									<DataPath>Объект.ФайлыВсего.ИмяФайла</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ФайлыВсегоИмяФайлаКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ФайлыВсегоИмяФайлаРасширеннаяПодсказка" id="150"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<InputField name="ФайлыВсегоПутьНаДиске1" id="151">
+							<DataPath>Items.ФайлыВсего.CurrentData.ПутьНаДиске</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ФайлыВсегоПутьНаДиске1КонтекстноеМеню" id="152"/>
+							<ExtendedTooltip name="ФайлыВсегоПутьНаДиске1РасширеннаяПодсказка" id="153"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelField name="ТекстСостояние" id="12">
+			<DataPath>ТекстСостояние</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="ТекстСостояниеКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="ТекстСостояниеРасширеннаяПодсказка" id="14"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузитьДокументыСОД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТабДок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстСостояние" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОстановитьЗагрузку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить загрузку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтекстЗагрузки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контекст загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ВремяНачалаЗагрузки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время начала загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяОкончанияЗагрузки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время начала загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсегоФайлов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_БЕДА_" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БЕДА</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_РАНЕЕ_" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РАНЕЕ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_УСПЕХ_" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УСПЕХ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДокументы</Action>
+		</Command>
+		<Command name="ЗавершитьЗагрузку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить загрузку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить загрузку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьЗагрузку</Action>
+		</Command>
+	</Commands>
+</Form>
