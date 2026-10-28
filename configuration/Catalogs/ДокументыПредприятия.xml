@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="13105bb3-ea54-48f1-a73d-e5b9546d27a1">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ДокументыПредприятия" category="Object">
+				<xr:TypeId>41602c46-4baa-4983-a2e4-e9f55d0f97c9</xr:TypeId>
+				<xr:ValueId>8b503e04-b7dd-455f-b700-5c660fccac07</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ДокументыПредприятия" category="Ref">
+				<xr:TypeId>c8ee7a95-1f0a-4d17-b5a8-19749226f457</xr:TypeId>
+				<xr:ValueId>dfff9cd5-f266-46e8-bf9c-c8bd18016217</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ДокументыПредприятия" category="Selection">
+				<xr:TypeId>e8697046-40b7-4acf-891b-9364fab4f2a8</xr:TypeId>
+				<xr:ValueId>1f8512fc-f09b-4db6-981f-6eda97eed57b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ДокументыПредприятия" category="List">
+				<xr:TypeId>d858486f-093c-4f74-8378-30681b1e2963</xr:TypeId>
+				<xr:ValueId>7af2f99f-7c39-4f6f-af52-9c4e941d17af</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ДокументыПредприятия" category="Manager">
+				<xr:TypeId>78aaa896-a90d-484d-99ac-bed234ff525a</xr:TypeId>
+				<xr:ValueId>9a64219c-abf0-4efd-a7ca-7b40f39d529c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДокументыПредприятия</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>017baf6e-d210-4362-b7ae-cbe8236aa7c4</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="73a2a228-655e-4d8c-98be-a9295dc6aa01">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ДокументыПредприятия.аск_сод_ФинансовыеШифры" category="TabularSection">
+						<xr:TypeId>92b75e48-bf97-4aac-bfb2-29cf1828f689</xr:TypeId>
+						<xr:ValueId>6e90d200-b79d-410f-aa23-ccfb004b95da</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ДокументыПредприятия.аск_сод_ФинансовыеШифры" category="TabularSectionRow">
+						<xr:TypeId>a457c0a1-2959-4d2a-bd31-7735321813ed</xr:TypeId>
+						<xr:ValueId>54bf59e0-d2d7-4485-bc67-530b4241240f</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>аск_сод_ФинансовыеШифры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Финансовые шифры</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber">
+							<xr:LinkByType/>
+							<xr:FillChecking>DontCheck</xr:FillChecking>
+							<xr:MultiLine>false</xr:MultiLine>
+							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+							<xr:MaxValue xsi:nil="true"/>
+							<xr:ToolTip/>
+							<xr:ExtendedEdit>false</xr:ExtendedEdit>
+							<xr:Format/>
+							<xr:ChoiceForm/>
+							<xr:QuickChoice>Auto</xr:QuickChoice>
+							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+							<xr:EditFormat/>
+							<xr:PasswordMode>false</xr:PasswordMode>
+							<xr:DataHistory>Use</xr:DataHistory>
+							<xr:MarkNegatives>false</xr:MarkNegatives>
+							<xr:MinValue xsi:nil="true"/>
+							<xr:Synonym/>
+							<xr:Comment/>
+							<xr:FullTextSearch>Use</xr:FullTextSearch>
+							<xr:ChoiceParameterLinks/>
+							<xr:FillValue xsi:nil="true"/>
+							<xr:Mask/>
+							<xr:ChoiceParameters/>
+						</xr:StandardAttribute>
+					</StandardAttributes>
+					<Use>ForItem</Use>
+					<LineNumberLength>5</LineNumberLength>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="932a542b-67bc-46fb-a88c-576c5e696925">
+						<Properties>
+							<Name>ФинансовыйШифр</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Финансовый шифр</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.аск_сод_ФинансовыеШифры</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="a274beb8-5f01-4911-ba45-df2be64b68b0">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ДокументыПредприятия.ДополнительныеРеквизиты" category="TabularSection">
+						<xr:TypeId>90986017-7c2c-4a37-91c4-9786b8e683d1</xr:TypeId>
+						<xr:ValueId>f03f638c-2ee2-45e7-89d8-7cb7d0c0eb55</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ДокументыПредприятия.ДополнительныеРеквизиты" category="TabularSectionRow">
+						<xr:TypeId>19c0d0f9-621a-48b8-b2dd-5782aad8025d</xr:TypeId>
+						<xr:ValueId>d5f0e3a7-d85f-457b-8d5f-eaea0904f2e6</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДополнительныеРеквизиты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>12a3cc17-1793-42ac-ad70-09918f2043ea</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="04f13305-134b-4428-93f2-54d769c47e0a">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Свойство</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>b9ec391f-ae79-40e2-a99e-e55a277e4fcb</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="85e5e915-fd14-41da-80b1-0d796700101e">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Значение</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>47fe1647-8f10-4094-ab63-b8c4f63da02e</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="778f990e-e8d0-4cc1-b1cc-6fda71a7d8a7">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ТекстоваяСтрока</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>e6cc0f31-121d-4f2c-829d-da07b6d2dcd1</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
